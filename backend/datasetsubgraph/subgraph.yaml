@@ -1,0 +1,35 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: DatasetContract
+    network: sepolia
+    source:
+      address: "0x724D85d269e2152E5CaE212eFF088153AD8b6e9b"
+      abi: DatasetContract
+      startBlock: 7480985
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - DatasetDownvoted
+        - DatasetUpvoted
+        - DatasetVerified
+        - uploadedDataset
+      abis:
+        - name: DatasetContract
+          file: ./abis/DatasetContract.json
+      eventHandlers:
+        - event: DatasetDownvoted(indexed uint256,indexed address)
+          handler: handleDatasetDownvoted
+        - event: DatasetUpvoted(indexed uint256,indexed address)
+          handler: handleDatasetUpvoted
+        - event: DatasetVerified(indexed uint256,indexed address,uint256)
+          handler: handleDatasetVerified
+        - event: uploadedDataset(indexed uint256,indexed address,string,string,string,uint256,uint256,bool)
+          handler: handleuploadedDataset
+      file: ./src/dataset-contract.ts

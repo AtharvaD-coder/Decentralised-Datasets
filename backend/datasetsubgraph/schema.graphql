@@ -1,0 +1,42 @@
+type DatasetDownvoted @entity(immutable: true) {
+  id: Bytes!
+  internal_id: BigInt! # uint256
+  voter: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type DatasetUpvoted @entity(immutable: true) {
+  id: Bytes!
+  internal_id: BigInt! # uint256
+  voter: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type DatasetVerified @entity(immutable: true) {
+  id: Bytes!
+  datasetId: BigInt! # uint256
+  verifier: Bytes! # address
+  rewardAmount: BigInt! # uint256
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type uploadedDataset @entity(immutable: true) {
+  id: Bytes!
+  internal_id: BigInt! # uint256
+  owner: Bytes! # address
+  ipfsHash: String! # string
+  description: String! # string
+  title: String! # string
+  upvotes: BigInt! # uint256
+  downvotes: BigInt! # uint256
+  verified: Boolean! # bool
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
