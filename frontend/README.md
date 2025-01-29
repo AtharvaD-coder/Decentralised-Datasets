@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Decentralized Datasets 🔗
 
-## Getting Started
+A dApp for dataset sharing and verification through blockchain technology. Users can upload datasets that undergo community verification, with a robust voting system ensuring data quality and reliability. Built with Next.js and Solidity, featuring a modern crypto-themed UI and decentralized storage solutions.
 
-First, run the development server:
+## 📸 Screenshots
 
+![Landing Page](public/landing_page.png)
+![Upload Interface](public/upload_page.png)
+![Successful Upload](public/successfully_uploaded.png)
+![Dataset Gallery](public/explore.png)
+
+## ✨ Features
+
+🔐 **Secure Dataset Storage**
+- Upload and store datasets on IPFS
+- Immutable records on the Ethereum blockchain
+- Complete data ownership and transparency
+
+🗳️ **Community Validation**
+- Decentralized verification system
+- Earn rewards for verifying datasets
+- Build trust through consensus
+
+⭐ **Quality Rating System**
+- Upvote/downvote mechanisms
+- Track dataset popularity
+- Surface high-quality content
+
+💎 **Web3 Integration**
+- Seamless wallet connection
+- Real-time blockchain updates
+
+
+## 🛠️ Tech Stack
+
+[![Tech Stack](https://skillicons.dev/icons?i=ts,nextjs,solidity,tailwind,nodejs,graphql,react)](https://skillicons.dev)
+
+- **TypeScript** - Type-safe development ensuring robust code
+- **Next.js** - Lightning-fast page loads with App Router
+- **Solidity** - Secure smart contracts for dataset management
+- **Tailwind** - Stunning responsive design with zero overhead
+- **Node.js** - Efficient development environment
+- **Hardhat** - Smart contract development and testing framework
+- **The Graph Protocol**  - Indexing and querying blockchain data
+
+## 🚀 Getting Started
+
+
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/AtharvaD-coder/Decentralised-Datasets.git
+cd decentralized-datasets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Running Locally
 
-## Learn More
+1. Start the development server
+```bash
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. Open [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Connect your Web3 wallet to interact with the dApp
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Usage
 
-## Deploy on Vercel
+✅ Upload DatasetsEffortlessly upload datasets to IPFS with immutable blockchain records.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🔍 Verify and VoteParticipate in decentralized dataset validation through community-driven voting.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📊 Discover and DownloadBrowse verified datasets, filter by ratings, and download high-quality data.
+
+💰 Earn RewardsGet incentivized for verifying datasets and contributing to the network.
+
+🔗 Seamless Web3 ExperienceConnect your wallet, interact with smart contracts, and stay updated in real-time.
