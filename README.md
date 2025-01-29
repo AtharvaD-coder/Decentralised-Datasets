@@ -52,7 +52,7 @@ A dApp for dataset sharing and verification through blockchain technology. Users
 1. Clone the repository
 ```bash
 git clone https://github.com/AtharvaD-coder/Decentralised-Datasets.git
-cd decentralized-datasets
+cd frontend
 ```
 
 2. Install dependencies
