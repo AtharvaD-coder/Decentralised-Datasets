@@ -4,10 +4,10 @@ A dApp for dataset sharing and verification through blockchain technology. Users
 
 ## 📸 Screenshots
 
-![Landing Page](public/landing_page.png)
-![Upload Interface](public/upload_page.png)
-![Successful Upload](public/successfully_uploaded.png)
-![Dataset Gallery](public/explore.png)
+![Landing Page](frontend/public/landing_page.png)
+![Upload Interface](frontend/public/upload_page.png)
+![Successful Upload](frontend/public/successfully_uploaded.png)
+![Dataset Gallery](frontend/public/explore.png)
 
 ## ✨ Features
 
